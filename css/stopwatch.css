@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background: #0d1420;
+    font-family: "Raleway", sans-serif;
+}
+nav{
+    background: black;
+    padding: 20px;
+    display: flex;
+}
+nav .pages{
+    background-color: black;
+    margin: 0px 10px;
+}
+nav .hamburger{
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    font-size: 30px;
+}
+nav i{
+    color: aliceblue;
+}
+nav .home{
+    margin-left: 40px;
+}
+nav .pages a{
+    text-decoration: none;
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 7px;
+}
+nav .pages a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.sidenav {
+    height: 75vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 64px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  .sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    background-color: #111;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 67.6vh;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    transition: margin-left .5s;
+}
+.time{
+    font-size: 100px;
+    font-family: sans-serif;
+    color: aliceblue;
+    padding: 0px 20px;
+    border: 0;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgb(0, 144, 144, 0.25);
+}
+.btn{
+    padding: 10px 20px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    background: rgb(0, 144, 144);
+    border: 0;
+    border-radius: 13px;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.btn:hover{
+    background: rgb(0, 96, 96);
+}
+.stop{
+    background-color: red;
+}
+.stop:hover{
+    background-color: rgb(131, 0, 0);
+}
+.reset{
+    background-color: rgb(71, 71, 71);
+}
+.reset:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+footer{
+    max-width: 100%;
+    margin: 115px 0px 0px 0px;
+    padding: 20px;
+    background-color: rgb(0, 144, 144);
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 760px){
+    .container{
+        height: 70vh;
+    }
+    .time{
+        font-size: 60px;
+        padding: 0px 20px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    footer{
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:420px){
+    nav{
+        padding: 10px;
+    }
+    .container{
+        height: 70vh;
+    }
+    .time{
+        font-size: 30px;
+        padding: 0px 15px;
+        border-radius: 18px;
+        margin-bottom: 20px;
+    }
+    footer{
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 61px;
+    }
+}

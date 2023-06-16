@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock App</title>
+</head>
+<body>
+    <nav id="top">
+        <div class="pages hamburger" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="pages home">
+            <a href="https://subhamctc3007.github.io/subhamctc3007.github.io" target="_blank">Home</a>
+        </div>
+        <div class="pages gallery">
+            <a href="https://subhamctc3007.github.io/Gallery" target="_blank">Gallery</a>
+        </div>
+        <div class="pages clock">
+            <a href="https://subhamctc3007.github.io/Clock" target="_parent">Clock</a>
+        </div>
+    </nav>
+
+    <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Clock</a>
+        <a href="stopwatch.html">Stopwatch</a>
+        <a href="timer.html">Timer</a>
+    </div>
+
+    <div class="container">
+        <lottie-player class="lottie" src="https://assets2.lottiefiles.com/packages/lf20_hlufehg3.json" background="transparent"  speed="0.4" loop autoplay></lottie-player>
+        <div class="dateTime">
+            <div class="txt" id="time"></div>
+            <div class="txt" id="date"></div>
+            <div class="txt" id="day"></div>
+        </div>
+    </div>
+
+    <script src="js/clock.js"></script>
+
+    <footer>
+        © Copyright Subham Mishra 2023
+    </footer>
+</body>
+</html>
