@@ -1,3 +1,5 @@
+let displaybox = document.getElementById('displaybox');
+
 let hrInput = document.getElementById('hrInput');
 let minInput = document.getElementById('minInput');
 let secInput = document.getElementById('secInput');
@@ -7,15 +9,24 @@ let mindisplay = document.getElementById('mindisplay');
 let secdisplay = document.getElementById('secdisplay');
 
 startbtn = document.getElementById('startbtn');
+deletebtn = document.getElementById('deletebtn');
+stopbtn = document.getElementById('stopbtn');
+
+let audio = document.getElementById('audio');
 
 let isRunning = false;
 let int = 0;
 
 startbtn.addEventListener('click', ()=>{
-
     hours = hrInput.value == '' ? 0 : Number(hrInput.value);
     minutes = minInput.value == '' ? 0 : Number(minInput.value);
     seconds = secInput.value == '' ? 0 : Number(secInput.value);
+    if(minutes > 59){
+        minutes = Number(minutes.toString().charAt(0));
+    }
+    if(seconds > 59){
+        seconds = Number(seconds.toString().charAt(0));
+    }
 
     if(!isRunning){
         isRunning = true;
@@ -24,18 +35,36 @@ startbtn.addEventListener('click', ()=>{
             clearInterval(int);
         }
         int = setInterval(Timer, 1000);
-
-
+        updateDisplay();
+        
+        hrInput.classList.add('invisible');
+        minInput.classList.add('invisible');
+        secInput.classList.add('invisible');
+        hrdisplay.classList.remove('invisible');
+        mindisplay.classList.remove('invisible');
+        secdisplay.classList.remove('invisible');
+        
         startbtn.innerHTML = 'Pause';
         startbtn.classList.add('pause');
+        deletebtn.classList.add('invisible');
     }
     else{
         clearInterval(int);
-        console.log('Paused')
+        console.log('Paused');
         isRunning = false;
         startbtn.innerHTML = 'Resume';
         startbtn.classList.remove('pause');
+        deletebtn.classList.remove('invisible');
     }
+});
+
+deletebtn.addEventListener('click', ()=>{
+    location.reload();
+});
+
+stopbtn.addEventListener('click', ()=>{
+    audio.pause();
+    location.reload();
 });
 
 function updateDisplay(){
@@ -50,10 +79,15 @@ function Timer(){
             if(hours == 0){
                 clearInterval(int);
                 isRunning = false;
+                startbtn.classList.add('invisible');
+                stopbtn.classList.remove('invisible');
+                displaybox.classList.add('redglow');
+                audio.play();
             }
             else{
                 hours--;
                 minutes = 59;
+                seconds = 59;
             }
         }
         else{

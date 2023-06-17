@@ -31,26 +31,28 @@
     </div>
 
     <div class="container">
-        <div class="display">
+        <div class="display" id="displaybox">
             <input id="hrInput" type="number" placeholder="00">
-            <span class="value" id="hrdisplay">00</span>
+            <span class="value invisible" id="hrdisplay">00</span>
             <span class="text">Hr</span>
             <input id="minInput" type="number" placeholder="00">
-            <span class="value" id="mindisplay">00</span>
+            <span class="value invisible" id="mindisplay">00</span>
             <span class="text">Min</span>
             <input id="secInput" type="number" placeholder="00">
-            <span class="value" id="secdisplay">00</span>
+            <span class="value invisible" id="secdisplay">00</span>
             <span class="text">Sec</span>
         </div>
         <div class="buttons">
-            <button class="deletebtn" id="deletebtn">Delete</button>
+            <button class="deletebtn invisible" id="deletebtn">Delete</button>
             <button class="startbtn" id="startbtn">Start</button>
+            <button class="stopbtn invisible" id="stopbtn">Stop</button>
         </div>
     </div>
 
+    <audio src="CAS - Apocalypse.mp3" id="audio"></audio>
     <script src="js/timer.js"></script>
     <script src="js/nav.js"></script>
-
+    
     <footer>
         © Copyright Subham Mishra 2023
     </footer>

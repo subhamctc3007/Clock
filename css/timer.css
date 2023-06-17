@@ -99,7 +99,10 @@ nav .clock a{
     padding: 10px 20px;
     border-radius: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 0 20px rgb(0, 144, 144, 0.25);
+    box-shadow: 0 0 20px rgba(0, 144, 144, 0.25);
+}
+.redglow{
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }
 .display input{
     height: 70px;
@@ -131,12 +134,16 @@ input::-webkit-inner-spin-button {
     border: 0;
     border-radius: 10px;
 }
-.deletebtn{
-    margin-right: 20px;
+.startbtn{
+    margin: 0px 20px;
 }
 
-.buttons .pause{
+.buttons .pause, .buttons .stopbtn{
     background-color: red;
+}
+
+.invisible{
+    display: none;
 }
 
 footer{
