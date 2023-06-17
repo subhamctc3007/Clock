@@ -43,11 +43,10 @@ nav .pages a:hover{
 }
 nav .clock a{
     color: rgb(0, 144, 144);
-    
 }
 
 .sidenav {
-    height: 538.92px;
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -94,11 +93,11 @@ nav .clock a{
     flex-direction: column;
 }
 .display{
-    font-size: 60px;
+    font-size: 75px;
     color: aliceblue;
     padding: 10px 20px;
     border-radius: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     box-shadow: 0 0 20px rgba(0, 144, 144, 0.3);
 }
 .blueglow{
@@ -108,10 +107,10 @@ nav .clock a{
     box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
 }
 .display input{
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 82px;
     text-align: center;
-    font-size: 60px;
+    font-size: 75px;
     font-family: sans-serif;
     color: aliceblue;
     border: 0;
@@ -134,13 +133,19 @@ input::-webkit-inner-spin-button {
     padding: 5px 10px;
     border: 0;
     border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .startbtn{
     margin: 0px 20px;
 }
-
+.startbtn:hover{
+    background: rgb(0, 96, 96);
+}
 .buttons .pause, .buttons .stopbtn, .buttons .deletebtn{
     background-color: red;
+}
+.buttons .pause:hover, .buttons .stopbtn:hover, .buttons .deletebtn:hover{
+    background-color: rgb(131, 0, 0)
 }
 .invisible{
     display: none;
@@ -156,20 +161,100 @@ footer{
     font-family: sans-serif;
 }
 
-@media screen and (max-width: 1064px){
-    footer{
-        
+@media screen and (max-width: 1000px){
+    .display{
+        font-size: 50px;
+    }
+    .display input{
+        height: 70px;
+        width: 55px;
+        font-size: 50px;
     }
 }
 
 @media screen and (max-width: 600px){
+    .container{
+        height: 85vh;
+    }
+    .display{
+        font-size: 40px;
+    }
+    .display input{
+        height: 60px;
+        width: 45px;
+        font-size: 40px;
+    }
     footer{
         padding: 15px;
         font-size: 14px;
     }
 }
-@media screen and (max-width:420px){
+@media screen and (max-width:425px){
     nav{
-        padding: 12px;
+        padding: 10px;
+    }
+    nav .pages{
+        margin: 0px 5px;
+    }
+    nav .hamburger{
+        top: 60px;
+        font-size: 25px;
+    }
+    nav .home{
+        margin-left: 10px;
+    }
+    nav .pages a{
+        font-size: 18px;
+        border: none;
+        padding: 4px 5px;
+    }
+
+    .sidenav {
+        top: 40.8px;
+        overflow-x: hidden;
+        padding-top: 60px;  
+      }
+      .sidenav a{
+        padding: 8px 8px 8px 32px;
+        font-size: 20px;
+      }
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+    .container{
+        height: 90vh;
+    }
+
+    .display{
+        font-size: 25px;
+        margin-bottom: 60px;
+    }
+    .display input{
+        height: 25px;
+        width: 27px;
+        font-size: 25px;
+    }
+
+    .buttons button{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 3px 5px;
+        border-radius: 8px;
+    }
+    .startbtn{
+        margin: 0px 10px;
+    }
+
+    footer{
+        padding: 10px;
+        font-size: 10px;
     }
 }

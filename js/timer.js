@@ -31,6 +31,9 @@ startbtn.addEventListener('click', ()=>{
         isfilled = true;
     }
 
+    if(hours > 99){
+        hours = Number(hours.toString().charAt(0) + hours.toString().charAt(1));
+    }
     if(minutes > 59){
         minutes = Number(minutes.toString().charAt(0));
     }
