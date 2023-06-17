@@ -97,6 +97,9 @@ nav .pages a:hover{
     margin-bottom: 20px;
     box-shadow: 0 0 20px rgb(0, 144, 144, 0.25);
 }
+.redglow{
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
+}
 .btn{
     padding: 10px 20px;
     margin: 20px;

@@ -99,10 +99,13 @@ nav .clock a{
     padding: 10px 20px;
     border-radius: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 0 20px rgba(0, 144, 144, 0.25);
+    box-shadow: 0 0 20px rgba(0, 144, 144, 0.3);
+}
+.blueglow{
+    box-shadow: 0 0 30px rgb(0, 177, 177);
 }
 .redglow{
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.7);
 }
 .display input{
     height: 70px;
@@ -112,11 +115,9 @@ nav .clock a{
     font-family: sans-serif;
     color: aliceblue;
     border: 0;
-    /* display: none; */
 }
 .display .value{
     font-family: sans-serif;
-    /* display: none; */
 }
 
 input::-webkit-outer-spin-button,
@@ -138,10 +139,9 @@ input::-webkit-inner-spin-button {
     margin: 0px 20px;
 }
 
-.buttons .pause, .buttons .stopbtn{
+.buttons .pause, .buttons .stopbtn, .buttons .deletebtn{
     background-color: red;
 }
-
 .invisible{
     display: none;
 }

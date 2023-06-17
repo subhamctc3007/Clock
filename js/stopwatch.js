@@ -27,6 +27,7 @@ startbtn.addEventListener('click', ()=>{
         lapbtn.style.opacity = 1;
         lapbtn.innerHTML = 'Lap';
         lapbtn.classList.remove('reset');
+        display.classList.add('redglow');
     }
     else{
         isRunning = false;
@@ -36,6 +37,7 @@ startbtn.addEventListener('click', ()=>{
         startbtn.classList.remove('stop');
         lapbtn.innerHTML = 'Reset';
         lapbtn.classList.add('reset');
+        display.classList.remove('redglow');
     }
     
 });
