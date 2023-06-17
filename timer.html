@@ -19,46 +19,37 @@
             <a href="https://subhamctc3007.github.io/Gallery" target="_blank">Gallery</a>
         </div>
         <div class="pages clock">
-            <a href="https://subhamctc3007.github.io/Clock" target="_parent">Clock</a>
+            <a href="https://subhamctc3007.github.io/Clock" target="_parent" >Clock</a>
         </div>
     </nav>
 
     <div class="sidenav" id="mySidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Clock</a>
-        <a href="stopwatch.html">Stopwatch</a>
-        <a href="timer.html">Timer</a>
+        <a href="index.html" class="clockLink">Clock</a>
+        <a href="stopwatch.html" class="stopwatchLink">Stopwatch</a>
+        <a href="timer.html" class="timerLink">Timer</a>
     </div>
 
     <div class="container">
-        <div class="timer">
-            <div class="part">
-                <div>Hours</div>
-                <button>↑</button>
-                <input type="number" placeholder="00">
-                <button>↓</button>
-            </div>
-            <span>:</span>
-            <div class="part">
-                <div class="parts">Minutes</div>
-                <div class="parts"><button>↑</button></div>
-                <div class="parts"><input type="number" placeholder="00"></div>
-                <div class="parts"><button>↓</button></div>
-            </div>
-            <span>:</span>
-            <div class="part">
-                <div>Seconds</div>
-                <button>↑</button>
-                <input type="number" placeholder="00">
-                <button>↓</button>
-            </div>
+        <div class="display">
+            <input id="hrInput" type="number" placeholder="00">
+            <span class="value" id="hrdisplay">00</span>
+            <span class="text">Hr</span>
+            <input id="minInput" type="number" placeholder="00">
+            <span class="value" id="mindisplay">00</span>
+            <span class="text">Min</span>
+            <input id="secInput" type="number" placeholder="00">
+            <span class="value" id="secdisplay">00</span>
+            <span class="text">Sec</span>
         </div>
         <div class="buttons">
-            <button>Start</button>
+            <button class="deletebtn" id="deletebtn">Delete</button>
+            <button class="startbtn" id="startbtn">Start</button>
         </div>
     </div>
 
     <script src="js/timer.js"></script>
+    <script src="js/nav.js"></script>
 
     <footer>
         © Copyright Subham Mishra 2023

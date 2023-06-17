@@ -41,8 +41,13 @@ nav .pages a:hover{
     background-color: aliceblue;
     color: black;
 }
+nav .clock a{
+    color: rgb(0, 144, 144);
+    
+}
+
 .sidenav {
-    height: 75vh;
+    height: 538.92px;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -72,6 +77,9 @@ nav .pages a:hover{
     font-size: 36px;
     margin-left: 50px;
   }
+  .sidenav .timerLink{
+    color: rgb(0, 144, 144);
+  }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -79,52 +87,33 @@ nav .pages a:hover{
 
 .container{
     display: flex;
-    height: 70vh;
+    height: 83vh;
     width: auto;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
-.timer{
-    display: flex;
-    align-items: last baseline;
-    justify-content: center;
+.display{
+    font-size: 60px;
     color: aliceblue;
-    font-size: 30px;
     padding: 10px 20px;
-    margin-bottom: 20px;
-    border: 0;
     border-radius: 20px;
+    margin-bottom: 40px;
     box-shadow: 0 0 20px rgb(0, 144, 144, 0.25);
 }
-.timer span{
-    margin: 0px 10px;
-    font-size: 50px;
-}
-.part{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+.display input{
+    height: 70px;
+    width: 70px;
     text-align: center;
-}
-.part input{
-    width: 100px;
-    text-align: center;
-    font-size: 70px;
-    border: 0;
+    font-size: 60px;
+    font-family: sans-serif;
     color: aliceblue;
-}
-.parts{
-    height: 25%;
-}
-.timer button{
     border: 0;
-    color: aliceblue;
-    background-color: rgb(0, 144, 144);
-    padding: 5px 10px;
-    border-radius: 5px;
+    /* display: none; */
+}
+.display .value{
+    font-family: sans-serif;
+    /* display: none; */
 }
 
 input::-webkit-outer-spin-button,
@@ -133,9 +122,26 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.buttons button{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(0, 144, 144);
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 10px;
+}
+.deletebtn{
+    margin-right: 20px;
+}
+
+.buttons .pause{
+    background-color: red;
+}
+
 footer{
     max-width: 100%;
-    margin: 92px 0px 0px 0px;
+    margin: 0;
     padding: 20px;
     background-color: rgb(0, 144, 144);
     color: black;
@@ -145,7 +151,7 @@ footer{
 
 @media screen and (max-width: 1064px){
     footer{
-        margin-top: 100px;
+        
     }
 }
 
