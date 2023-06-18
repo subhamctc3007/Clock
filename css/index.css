@@ -174,30 +174,12 @@ footer{
         border: none;
         padding: 4px 5px;
     }
-
-    .sidenav{
-        overflow-x: hidden;
-        padding-top: 60px;  
-      }
-      .sidenav a{
-        padding: 8px 8px 8px 32px;
+    .sidenav a{
         font-size: 20px;
-      }
-      .sidenav a:hover {
-        color: #f1f1f1;
-      }
-      .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-      }
-
+    }
     .container{
         height: 70vh;
     }
-
     footer{
         margin-top: 155px;
         padding: 10px;

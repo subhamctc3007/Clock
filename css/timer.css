@@ -50,7 +50,7 @@ nav .clock a{
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 64px;
+    top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -208,31 +208,12 @@ footer{
         border: none;
         padding: 4px 5px;
     }
-
-    .sidenav {
-        top: 40.8px;
-        overflow-x: hidden;
-        padding-top: 60px;  
-      }
-      .sidenav a{
-        padding: 8px 8px 8px 32px;
+    .sidenav a{
         font-size: 20px;
-      }
-      .sidenav a:hover {
-        color: #f1f1f1;
-      }
-      .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-      }
-
+    }
     .container{
         height: 90vh;
     }
-
     .display{
         font-size: 28px;
         margin-bottom: 60px;
@@ -242,7 +223,6 @@ footer{
         width: 30px;
         font-size: 28px;
     }
-
     .buttons button{
         padding: 5px 8px;
         border-radius: 8px;
@@ -250,7 +230,6 @@ footer{
     .startbtn{
         margin: 0px 10px;
     }
-
     footer{
         margin-top: 50px;
         padding: 10px;
