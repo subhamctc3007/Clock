@@ -50,7 +50,7 @@ nav .clock a{
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0px;
+    top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
