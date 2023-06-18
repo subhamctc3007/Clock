@@ -234,19 +234,18 @@ footer{
     }
 
     .display{
-        font-size: 25px;
+        font-size: 28px;
         margin-bottom: 60px;
     }
     .display input{
         height: 25px;
-        width: 27px;
-        font-size: 25px;
+        width: 30px;
+        font-size: 28px;
     }
 
     .buttons button{
-        font-size: 14px;
-        font-weight: 500;
-        padding: 3px 5px;
+        font-size: 16px;
+        padding: 5px 7px;
         border-radius: 8px;
     }
     .startbtn{
@@ -254,6 +253,7 @@ footer{
     }
 
     footer{
+        margin-top: 50px;
         padding: 10px;
         font-size: 10px;
     }
