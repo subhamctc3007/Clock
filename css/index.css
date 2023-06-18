@@ -16,16 +16,6 @@ nav .pages{
     background-color: black;
     margin: 0px 10px;
 }
-nav .hamburger{
-    margin: 0;
-    position: absolute;
-    top: 80px;
-    z-index: 1;
-    font-size: 30px;
-}
-nav i{
-    color: aliceblue;
-}
 nav .home{
     margin-left: 50px;
 }
@@ -44,6 +34,16 @@ nav .pages a:hover{
 }
 nav .clock a{
     color: rgb(0, 144, 144);
+}
+nav .hamburger{
+    margin: 0;
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    font-size: 30px;
+}
+nav i{
+    color: aliceblue;
 }
 .sidenav {
     height: 100%;
@@ -179,6 +179,10 @@ footer{
     }
     .container{
         height: 70vh;
+    }
+    #date, #day{
+        font-size: 28px;
+        margin-left: 10px;
     }
     footer{
         margin-top: 155px;
