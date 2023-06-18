@@ -41,12 +41,15 @@ nav .pages a:hover{
     background-color: aliceblue;
     color: black;
 }
+nav .clock a{
+    color: rgb(0, 144, 144);
+}
 .sidenav {
-    height: 75vh;
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 64px;
+    top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -72,6 +75,9 @@ nav .pages a:hover{
     font-size: 36px;
     margin-left: 50px;
   }
+  .sidenav .clockLink{
+    color: rgb(0, 144, 144);
+  }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -93,7 +99,6 @@ nav .pages a:hover{
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    
 }
 .txt{
     font-family: sans-serif;
@@ -102,6 +107,10 @@ nav .pages a:hover{
     margin: 10px;
     color: aliceblue;
     font-size: 70px;
+    box-shadow: 0 0 20px rgb(0, 177, 177);
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
 }
 #date, #day{
     color: rgb(197, 204, 210);
@@ -119,20 +128,77 @@ footer{
     font-family: sans-serif;
 }
 
-@media screen and (max-width: 1064px){
-    footer{
-        margin-top: 100px;
+@media screen and (max-width: 1000px){
+    .lottie{
+        height: 300px;
+        width: 300px;
+    }
+    #time{
+        font-size: 46px;
+    }
+    #date, #day{
+        font-size: 37px;
+        margin-left: 10px;
     }
 }
 
 @media screen and (max-width: 600px){
+    .container{
+        height: 80vh;
+        flex-direction: column;
+    }
+
     footer{
         padding: 15px;
         font-size: 14px;
     }
 }
-@media screen and (max-width:420px){
+@media screen and (max-width:425px){
     nav{
-        padding: 12px;
+        padding: 10px;
+    }
+    nav .pages{
+        margin: 0px 5px;
+    }
+    nav .hamburger{
+        top: 60px;
+        font-size: 25px;
+    }
+    nav .home{
+        margin-left: 10px;
+    }
+    nav .pages a{
+        font-size: 18px;
+        border: none;
+        padding: 4px 5px;
+    }
+
+    .sidenav{
+        overflow-x: hidden;
+        padding-top: 60px;  
+      }
+      .sidenav a{
+        padding: 8px 8px 8px 32px;
+        font-size: 20px;
+      }
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+
+    .container{
+        height: 90vh;
+    }
+
+    footer{
+        margin-top: 50px;
+        padding: 10px;
+        font-size: 10px;
     }
 }

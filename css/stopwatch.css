@@ -41,6 +41,9 @@ nav .pages a:hover{
     background-color: aliceblue;
     color: black;
 }
+nav .clock a{
+    color: rgb(0, 144, 144);
+}
 
 .sidenav {
     height: 75vh;
@@ -72,6 +75,9 @@ nav .pages a:hover{
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+  .sidenav .stopwatchLink{
+    color: rgb(0, 144, 144);
   }
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
