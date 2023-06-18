@@ -218,7 +218,8 @@ footer{
         padding: 4px 5px;
     }
 
-    .sidenav{
+    .sidenav {
+        top: 40.8px;
         overflow-x: hidden;
         padding-top: 60px;  
       }
